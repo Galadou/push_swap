@@ -51,7 +51,8 @@ int	main(int argc, char **argv)
 		printf("%d = nb\n%d = id\n\n", test->nb, test->id);
 		test = test->next;
 	}*/
-	find_chunk_and_bflies(&list_a, &list_b, nb_arg);
+	if (is_lst_sort(list_a) == 1)
+		find_chunk_and_bflies(&list_a, &list_b, nb_arg);
 	//is_list_sort(list_a, list_b);
 
 
